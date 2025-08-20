@@ -15,12 +15,12 @@ app.use(cors({
 
 // ✅ Stream channel map (use environment variables, not hardcoded)
 const streams = {
-  gma7: process.env.GMA7_URL,
+  gma: process.env.GMA7_URL,
   cinemo_ph: process.env.CINEMOPH_URL,
   kapamilyachannelhd: process.env.KAPAMILYA_URL,
   gtv: process.env.GTV_URL,
   cinemaone_ph: process.env.CINEMAONE_URL,
-  all_tv2: process.env.ALLTV_URL,
+  alltv2: process.env.ALLTV_URL,
   net25: process.env.NET25_URL,
   teleradyo: process.env.TELERADYO_URL,
   anchd: process.env.ANC_HD_URL,
