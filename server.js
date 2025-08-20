@@ -52,7 +52,7 @@ const streams = {
 const segmentMap = new Map();
 
 // 📺 Proxy M3U8 playlists
-app.get('/:stream/playlist.m3u8', (req, res) => {
+app.get('/:stream/manifest.m3u8', (req, res) => {
   const key = req.params.stream;
   const streamUrl = streams[key];
   if (!streamUrl) return res.status(404).send('❌ Invalid stream key');
