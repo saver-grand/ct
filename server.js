@@ -1,4 +1,4 @@
-// server.js
+
 require('dotenv').config();
 const express = require('express');
 const request = require('request');
@@ -22,6 +22,30 @@ const streams = {
   cinemaoneph: process.env.CINEMAONE_URL,
   alltv2: process.env.ALLTV_URL,
   net25: process.env.NET25_URL,
+  teleradyo: process.env.TELERADYO_URL,
+  anchd: process.env.ANC_HD_URL,
+  myxphilippines: process.env.MYX_PHILIPPINES_URL,
+  bilyonaryo: process.env.BILYONARYO_CHANNEL_URL,
+  tv5hd: process.env.TV5_HD_URL,
+  a2z: process.env.A2Z_URL,
+  ibc: process.env.IBC_URL,
+  untv: process.env.UNTV_URL,
+  ptv4: process.env.PTV4_URL,
+  dzrhtv: process.env.DZRH_TV_URL,
+  knowledge: process.env.KNOWLEDGE_CHANNELS_URL,
+  aliw23: process.env.ALIW_CHANNEL_23_URL,
+  cltv36: process.env.CLTV_36_URL,
+  spotlight: process.env.SPOTLIGHT_TV_URL,
+  rjtv: process.env.RJ_TV_URL,
+  rjtv29: process.env.RJTV_29_URL,
+  onemedia: process.env.ONE_MEDIA_URL,
+  lachtv: process.env.LACH_TV_URL,
+  oneph: process.env.ONE_PH_URL,
+  onenews: process.env.ONE_NEWS_URL,
+  vivacinema: process.env.VIVA_CINEMA_URL,
+  pbo: process.env.PBO_URL,
+  star1: process.env.STAR_1_URL,
+  cinemaworld: process.env.CINEMAWORLD_URL,
 };
 
 // 🔒 Temporary segment token map
@@ -78,7 +102,7 @@ app.get('/segment.ts', (req, res) => {
 
 // 🌐 Root
 app.get('/', (req, res) => {
-  res.send('⭐ STAR OF VENUS ⭐');
+  res.send('WELCOME TO HONOR TV');
 });
 
 // 🚀 Start server
